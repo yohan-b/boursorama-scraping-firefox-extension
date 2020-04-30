@@ -1,0 +1,26 @@
+{
+
+  "description": "Scraping Boursorama",
+  "manifest_version": 2,
+  "name": "boursorama-scraping",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/http-response",
+  "icons": {
+    "48": "pen.svg"
+  },
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "https://www.boursorama.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  }
+
+}
